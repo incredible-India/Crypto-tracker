@@ -1,12 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>x
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crypto Market</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+ 
+    <div class="container mt-2">
+        <h2 class="text-center CM text-light">Crypto <i class="fa-brands fa-bitcoin text-warning"></i> Currency</h2>
+    </div>
+
+
+    <div class="container mt-2 err alert alert-danger" style="display:none"></div>
+
+
+    <div class="container mt-3">
+
+      <div class="row">
+        <div class="col-sm-3">
+
+
+            <div class="card bg-dark" style="width: 18rem;">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-center text-light">Open Price</h5>
+                  <h2 class="card-subtitle mb-2 text-muted text-center text-success"><i class="fa-solid fa-circle-up text-success"></i> 
+                <span class="o text-light"></span>
+                </h2>
+                 
+                </div>
+
+                
+              </div>
+
+
+            
+        </div>
+
+
+        <div class="col-sm-3">
+            <div class="card bg-dark" style="width: 18rem;">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-center text-light">Low Price</h5>
+                  <h2 class="card-subtitle mb-2 text-muted text-center text-success"><i class="fa-solid fa-circle-down text-danger"></i> <span class="l text-light"></span></h2>
+                 
+                </div>
+              </div>
+
+              
+
+         </div>
+
+         <div class="col-sm-3">
+            <div class="card bg-dark" style="width: 18rem;">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-center text-light">Hight Price</h5>
+                  <h2 class="card-subtitle mb-2 text-muted text-center text-success"><i class="fa-solid fa-bolt-lightning text-warning"></i> <span class="h text-light"></span></h2>
+                 
+                </div>
+              </div>
+
+              
+
+         </div>
+
+
+         <div class="col-sm-3">
+            <div class="card bg-dark" style="width: 18rem;">
+                <div class="card-body bg-dark">
+                  <h5 class="card-title text-center text-light">Percent Change</h5>
+                  <h2 class="card-subtitle mb-2 text-muted text-center text-success"><i class="fa-solid fa-percent"></i><br> <span class="p text-light"></span></h2>
+                 
+                </div>
+              </div>
+
+              
+
+         </div>
+
+         
+      </div>
+     
+    </div>
+
+    <div class="container mt-4" style="overflow-x :auto;">
+
+        <div class="row">
+            <div class="col-sm-4" >
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                       
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                   
+                      </tr>
+                    </thead>
+                    <tbody class="tbody">
+                     
+                       
+                    </tbody>
+                  </table>
+            </div>
+
+<div class="col-sm-8">
+
+
+    <select  class="form-control cht">
+        <option value="pie">Pie</option>
+        <option value="line" selected>Line</option>
+        <option value="bar">Bar</option>
+        <option value="doughnut">Doughnut</option>
+    </select>
+
+        <canvas id="myChart" width="400px" height="400px"></canvas>
+
+
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./JS/index.js"></script>
+  </body>
+</html>
